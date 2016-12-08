@@ -1,0 +1,23 @@
+{
+  "id": "scheduleK1.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "sCorp": {
+      "type": ["array", "null"],
+      "items": {"$ref": "sCorp.json#"},
+      "minItems": 0,
+      "uniqueItems": false
+    },
+    "partnership": {
+      "type": ["array", "null"],
+      "items": {"$ref": "partnership.json#"},
+      "minItems": 0,
+      "uniqueItems": false
+    }
+  },
+  "required": [
+    "sCorp",
+    "partnership"
+  ]
+}

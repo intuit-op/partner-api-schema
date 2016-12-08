@@ -1,0 +1,28 @@
+{
+  "id": "sCorp.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "businessIncome": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    },
+    "realEstateIncome": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    },
+    "basisAdjustment": {
+      "type": ["array", "null"],
+      "items": {
+        "type": ["integer", "null"]
+      },
+      "minItems": 0,
+      "uniqueItems": false
+    }
+  },
+  "required": [
+    "businessIncome",
+    "realEstateIncome",
+    "basisAdjustment"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "partnership.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "businessIncome": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    },
+    "realEstateIncome": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    },
+    "interestIncome": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    },
+    "shares": {"$ref": "shares.json#"}
+  },
+  "required": [
+    "businessIncome",
+    "realEstateIncome",
+    "interestIncome",
+    "shares"
+  ]
+}

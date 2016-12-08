@@ -1,0 +1,39 @@
+{
+  "id": "shares.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "beginningProfit": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    },
+    "endingProfit": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    },
+    "beginningLoss": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    },
+    "endingLoss": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    },
+    "beginningCapital": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    },
+    "endingCapital": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    }
+  },
+  "required": [
+    "beginningProfit",
+    "endingProfit",
+    "beginningLoss",
+    "endingLoss",
+    "beginningCapital",
+    "endingCapital"
+  ]
+}
