@@ -1,5 +1,5 @@
 {
-  "id": "w2_schema.json",
+  "id": "w2.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {

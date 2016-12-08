@@ -1,0 +1,24 @@
+{
+  "id": "scheduleE.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "mortgageInterest": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    },
+    "depreciationExpense": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    },
+    "netRentalIncome": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    }
+  },
+  "required": [
+    "mortgageInterest",
+    "depreciationExpense",
+    "netRentalIncome"
+  ]
+}

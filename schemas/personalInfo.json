@@ -1,5 +1,5 @@
 {
-  "id": "personalInfo_schema.json",
+  "id": "personalInfo.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "properties": {
@@ -11,7 +11,7 @@
       },
       "nameSuffix": {
         "type": ["string", "null"],
-        "description": "for 'Mr John A King Jr.' will submit 'Jr.'"
+        "description": "for 'Mr. John A King III' will submit 'III'"
       },
       "streetAddress1": {"type": ["string", "null"]},
       "streetAddress2": {"type": ["string", "null"]},

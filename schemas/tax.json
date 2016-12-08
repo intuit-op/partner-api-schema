@@ -1,5 +1,5 @@
 {
-  "id": "tax_schema.json",
+  "id": "tax.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
@@ -29,56 +29,22 @@
     },
     "w2": {
       "type": ["array", "null"],
-      "items": {"$ref": "w2_schema.json#"},
+      "items": {"$ref": "w2.json#"},
       "minItems": 0,
       "uniqueItems": false
     },
     "scheduleC": {
       "type": ["array", "null"],
-      "items": {"$ref": "scheduleC_schema.json#"},
+      "items": {"$ref": "scheduleC.json#"},
       "minItems": 0,
       "uniqueItems": false
     },
-    "scheduleD": {
-      "type": "object",
-      "properties": {
-        "shortTerm": {
-          "type": "integer"
-        },
-        "longTerm": {
-          "type": "integer"
-        },
-        "summary": {
-          "type": "integer"
-        }
-      },
-      "required": [
-        "shortTerm",
-        "longTerm",
-        "summary"
-      ]
-    },
+    "scheduleD": {"$ref": "scheduleD.json#"},
     "scheduleE": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "mortgageInterest": {
-            "type": "integer"
-          },
-          "depreciationExpense": {
-            "type": "integer"
-          },
-          "netRentalIncome": {
-            "type": "integer"
-          }
-        },
-        "required": [
-          "mortgageInterest",
-          "depreciationExpense",
-          "netRentalIncome"
-        ]
-      }
+      "type": ["array", "null"],
+      "items": {"$ref": "scheduleE.json#"},
+      "minItems": 0,
+      "uniqueItems": false
     },
     "scheduleK1": {
       "type": "object",

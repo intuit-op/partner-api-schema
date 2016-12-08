@@ -1,0 +1,24 @@
+{
+  "id": "scheduleD.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": ["object", "null"],
+  "properties": {
+    "shortTerm": {
+      "type": ["integer", "null"],
+      "description": "line 7 of Schedule D"
+    },
+    "longTerm": {
+      "type": ["integer", "null"],
+      "description": "line 15 of Schedule D"
+    },
+    "summary": {
+      "type": ["integer", "null"],
+      "description": "line 21 of Schedule D"
+    }
+  },
+  "required": [
+    "shortTerm",
+    "longTerm",
+    "summary"
+  ]
+}

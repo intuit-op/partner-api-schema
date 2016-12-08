@@ -5,7 +5,7 @@ import json
 from glob import glob
 from jsonschema import Draft4Validator, ValidationError, RefResolver
 
-abs_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),'schemata')
+abs_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),'schemas')
 schema_path = os.path.join(abs_path, 'schema.json')
 
 with open(schema_path) as schema_file:

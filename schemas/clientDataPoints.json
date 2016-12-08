@@ -1,10 +1,10 @@
 {
-  "id": "clientDataPoints_schema.json",
+  "id": "clientDataPoints.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "personalInfo": {"$ref": "personalInfo_schema.json#"},
-    "tax": {"$ref": "tax_schema.json#"}
+    "personalInfo": {"$ref": "personalInfo.json#"},
+    "tax": {"$ref": "tax.json#"}
   },
   "required": [
     "personalInfo",
