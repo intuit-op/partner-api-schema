@@ -1,0 +1,19 @@
+{
+  "id": "form8949.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "shortTermProceeds": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    },
+    "longTermProceeds": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    }
+  },
+  "required": [
+    "shortTermProceeds",
+    "longTermProceeds"
+  ]
+}

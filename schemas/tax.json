@@ -48,22 +48,10 @@
     },
     "scheduleK1": {"$ref": "scheduleK1.json#"},
     "form8949": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "shortTermProceeds": {
-            "type": "null"
-          },
-          "longTermProceeds": {
-            "type": "null"
-          }
-        },
-        "required": [
-          "shortTermProceeds",
-          "longTermProceeds"
-        ]
-      }
+      "type": ["array", "null"],
+      "items": {"$ref": "form8949.json#"},
+      "minItems": 0,
+      "uniqueItems": false
     },
     "form1099R": {
       "type": "array",
