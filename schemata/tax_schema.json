@@ -1,0 +1,359 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "annualIncome": {
+      "type": "integer",
+      "description": "can be negative or large positive, cents",
+      "minimum": -Infinity,
+      "maximum": Infinity
+    },
+    "paidPropertyTaxes": {
+      "type": "null"
+    },
+    "filingStatus": {
+      "type": "string",
+      "enum": [
+        "single", 
+        "married_filing_jointly", 
+        "married_filing_separately", 
+        "head_of_household", 
+        "widow"
+      ]
+    },
+    "contributionIRA": {
+      "type": "integer"
+    },
+    "w2": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ein": {
+            "type": "string"
+          },
+          "employerName": {
+            "type": "string"
+          },
+          "wages": {
+            "type": "integer"
+          },
+          "federalWithholding": {
+            "type": "integer"
+          },
+          "contribution401k": {
+            "type": "integer"
+          },
+          "contribution403B": {
+            "type": "integer"
+          },
+          "sep": {
+            "type": "integer"
+          },
+          "stateWithholding": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "ein",
+          "employerName",
+          "wages",
+          "federalWithholding",
+          "contribution401k",
+          "contribution403B",
+          "sep",
+          "stateWithholding"
+        ]
+      },
+      "minItems": 0,
+      "uniqueItems": false
+    },
+    "scheduleC": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "income": {
+            "type": "integer"
+          },
+          "expenses": {
+            "type": "integer"
+          },
+          "otherExpenses": {
+            "type": "integer"
+          },
+          "costsOfGoodsSold": {
+            "type": "integer"
+          },
+          "ownership": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "income",
+          "expenses",
+          "otherExpenses",
+          "costsOfGoodsSold",
+          "ownership"
+        ]
+      }
+    },
+    "scheduleD": {
+      "type": "object",
+      "properties": {
+        "shortTerm": {
+          "type": "integer"
+        },
+        "longTerm": {
+          "type": "integer"
+        },
+        "summary": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "shortTerm",
+        "longTerm",
+        "summary"
+      ]
+    },
+    "scheduleE": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "mortgageInterest": {
+            "type": "integer"
+          },
+          "depreciationExpense": {
+            "type": "integer"
+          },
+          "netRentalIncome": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "mortgageInterest",
+          "depreciationExpense",
+          "netRentalIncome"
+        ]
+      }
+    },
+    "scheduleK1": {
+      "type": "object",
+      "properties": {
+        "sCorp": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "businessIncome": {
+                "type": "integer"
+              },
+              "realEstateIncome": {
+                "type": "integer"
+              },
+              "basisAdjustment": {
+                "type": "array",
+                "items": {}
+              }
+            },
+            "required": [
+              "businessIncome",
+              "realEstateIncome",
+              "basisAdjustment"
+            ]
+          }
+        },
+        "partnership": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "businessIncome": {
+                "type": "integer"
+              },
+              "realEstateIncome": {
+                "type": "integer"
+              },
+              "interestIncome": {
+                "type": "integer"
+              },
+              "shares": {
+                "type": "object",
+                "properties": {
+                  "beginningProfit": {
+                    "type": "integer"
+                  },
+                  "endingProfit": {
+                    "type": "integer"
+                  },
+                  "beginningLoss": {
+                    "type": "integer"
+                  },
+                  "endingLoss": {
+                    "type": "integer"
+                  },
+                  "beginningCapital": {
+                    "type": "integer"
+                  },
+                  "endingCapital": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "beginningProfit",
+                  "endingProfit",
+                  "beginningLoss",
+                  "endingLoss",
+                  "beginningCapital",
+                  "endingCapital"
+                ]
+              }
+            },
+            "required": [
+              "businessIncome",
+              "realEstateIncome",
+              "interestIncome",
+              "shares"
+            ]
+          }
+        }
+      },
+      "required": [
+        "sCorp",
+        "partnership"
+      ]
+    },
+    "form8949": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "shortTermProceeds": {
+            "type": "null"
+          },
+          "longTermProceeds": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "shortTermProceeds",
+          "longTermProceeds"
+        ]
+      }
+    },
+    "form1099R": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ein": {
+            "type": "string"
+          },
+          "payerName": {
+            "type": "string"
+          },
+          "grossDistribution": {
+            "type": "integer"
+          },
+          "distributionType": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "ein",
+          "payerName",
+          "grossDistribution",
+          "distributionType"
+        ]
+      }
+    },
+    "form1098E": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "recipientId": {
+            "type": "string"
+          },
+          "interestReceivedByLender": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "recipientId",
+          "interestReceivedByLender"
+        ]
+      }
+    },
+    "form1099INT": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "payerName": {
+            "type": "string"
+          },
+          "interestIncome": {
+            "type": "integer"
+          },
+          "earlyWithdrawalPenalty": {
+            "type": "integer"
+          },
+          "interestOnBondsAndTreasury": {
+            "type": "integer"
+          },
+          "taxExemptInterest": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "payerName",
+          "interestIncome",
+          "earlyWithdrawalPenalty",
+          "interestOnBondsAndTreasury",
+          "taxExemptInterest"
+        ]
+      }
+    },
+    "form1099DIV": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "payerName": {
+            "type": "string"
+          },
+          "totalOrdinaryDividend": {
+            "type": "integer"
+          },
+          "totalCapitalGainDistribution": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "payerName",
+          "totalOrdinaryDividend",
+          "totalCapitalGainDistribution"
+        ]
+      }
+    }
+  },
+  "required": [
+    "annualIncome",
+    "paidPropertyTaxes",
+    "filingStatus",
+    "contributionIRA",
+    "w2",
+    "scheduleC",
+    "scheduleD",
+    "scheduleE",
+    "scheduleK1",
+    "form8949",
+    "form1099R",
+    "form1098E",
+    "form1099INT",
+    "form1099DIV"
+  ]
+}
