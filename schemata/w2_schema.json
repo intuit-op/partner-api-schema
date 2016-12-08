@@ -1,0 +1,61 @@
+{
+  "id": "w2_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ein": {
+      "type": ["string", "null"]
+    },
+    "employerName": {
+      "type": ["string", "null"]
+    },
+    "wages": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    },
+    "federalWithholding": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    },
+    "contribution401k": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    },
+    "contribution403B": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    },
+    "sep": {
+      "type": ["integer", "null"],
+      "description": "in cents"
+    },
+    "stateWithholding": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "type": "string"
+          },
+          "tax": {
+            "type": "integer"
+          }
+        },
+        "required": ["state","tax"]
+      },
+      "minItems": 0,
+      "uniqueItems": true,
+      "additionalItems": false
+    }
+  },
+  "required": [
+    "ein",
+    "employerName",
+    "wages",
+    "federalWithholding",
+    "contribution401k",
+    "contribution403B",
+    "sep",
+    "stateWithholding"
+  ]
+}

@@ -1,15 +1,17 @@
 {
+  "id": "tax_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
     "annualIncome": {
       "type": "integer",
-      "description": "can be negative or large positive, cents",
+      "description": "adjusted gross income, can be negative, cents",
       "minimum": -Infinity,
       "maximum": Infinity
     },
     "paidPropertyTaxes": {
-      "type": "null"
+      "type": ["integer", "null"],
+      "description": "personal property taxes, 1040 schA line 7, cents"
     },
     "filingStatus": {
       "type": "string",
@@ -22,81 +24,20 @@
       ]
     },
     "contributionIRA": {
-      "type": "integer"
+      "type": ["integer", "null"],
+      "description": "please specify source: which form and line?"
     },
     "w2": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "ein": {
-            "type": "string"
-          },
-          "employerName": {
-            "type": "string"
-          },
-          "wages": {
-            "type": "integer"
-          },
-          "federalWithholding": {
-            "type": "integer"
-          },
-          "contribution401k": {
-            "type": "integer"
-          },
-          "contribution403B": {
-            "type": "integer"
-          },
-          "sep": {
-            "type": "integer"
-          },
-          "stateWithholding": {
-            "type": "integer"
-          }
-        },
-        "required": [
-          "ein",
-          "employerName",
-          "wages",
-          "federalWithholding",
-          "contribution401k",
-          "contribution403B",
-          "sep",
-          "stateWithholding"
-        ]
-      },
+      "type": ["array", "null"],
+      "items": {"$ref": "w2_schema.json#"},
       "minItems": 0,
       "uniqueItems": false
     },
     "scheduleC": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "income": {
-            "type": "integer"
-          },
-          "expenses": {
-            "type": "integer"
-          },
-          "otherExpenses": {
-            "type": "integer"
-          },
-          "costsOfGoodsSold": {
-            "type": "integer"
-          },
-          "ownership": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "income",
-          "expenses",
-          "otherExpenses",
-          "costsOfGoodsSold",
-          "ownership"
-        ]
-      }
+      "type": ["array", "null"],
+      "items": {"$ref": "scheduleC_schema.json#"},
+      "minItems": 0,
+      "uniqueItems": false
     },
     "scheduleD": {
       "type": "object",

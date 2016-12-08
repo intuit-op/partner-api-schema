@@ -1,4 +1,5 @@
 {
+  "id": "personalInfo_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "properties": {
@@ -8,7 +9,10 @@
         "type": "string",
         "minLength": 1
       },
-      "nameSuffix": {"type": ["string", "null"]},
+      "nameSuffix": {
+        "type": ["string", "null"],
+        "description": "for 'Mr John A King Jr.' will submit 'Jr.'"
+      },
       "streetAddress1": {"type": ["string", "null"]},
       "streetAddress2": {"type": ["string", "null"]},
       "city": {"type": "string"},
@@ -27,5 +31,6 @@
       "state",
       "country",
       "zip"
-    ]
+    ],
+  "additionalProperties": false
 }

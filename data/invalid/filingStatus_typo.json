@@ -17,7 +17,7 @@
     "tax": {
       "annualIncome": 1200088000,
       "paidPropertyTaxes": null,
-      "filingStatus": "single",
+      "filingStatus": "married_filing_seperately",
       "contributionIRA": 0,
       "w2": [
         {

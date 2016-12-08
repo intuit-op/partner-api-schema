@@ -28,7 +28,12 @@
           "contribution401k": 30300,
           "contribution403B": 50500,
           "sep": 0,
-          "stateWithholding": 8000000
+          "stateWithholding": [
+            {
+              "state":"MO", 
+              "tax":50000
+            }
+          ]
         }
       ],
       "scheduleC": [

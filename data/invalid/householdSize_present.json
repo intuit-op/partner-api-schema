@@ -12,7 +12,8 @@
       "city": "ANTHILL",
       "state": "MO",
       "country": null,
-      "zip": "00000"
+      "zip": "00000",
+      "householdSize": 1
     },
     "tax": {
       "annualIncome": 1200088000,
