@@ -5,19 +5,19 @@
   "properties": {
     "income": {
       "type": ["integer", "null"],
-      "description": "in cents"
+      "description": "schedule C line 7"
     },
     "expenses": {
       "type": ["integer", "null"],
-      "description": "in cents"
+      "description": "schedule C line 28"
     },
     "otherExpenses": {
       "type": ["integer", "null"],
-      "description": "in cents"
+      "description": "schedule C line 27a"
     },
     "costsOfGoodsSold": {
       "type": ["integer", "null"],
-      "description": "in cents"
+      "description": "schedule C line 42"
     },
     "ownership": {
       "type": ["string", "null"],
@@ -33,5 +33,6 @@
     "otherExpenses",
     "costsOfGoodsSold",
     "ownership"
-  ]
+  ],
+  "additionalProperties": false
 }

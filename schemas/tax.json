@@ -11,7 +11,7 @@
     },
     "paidPropertyTaxes": {
       "type": ["integer", "null"],
-      "description": "personal property taxes, 1040 schA line 7, cents"
+      "description": "real estate taxes, form 1040 schedule A line 6"
     },
     "filingStatus": {
       "type": "string",
@@ -93,5 +93,6 @@
     "form1098E",
     "form1099INT",
     "form1099DIV"
-  ]
+  ],
+  "additionalProperties": false
 }

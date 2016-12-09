@@ -24,5 +24,6 @@
     "businessIncome",
     "realEstateIncome",
     "basisAdjustment"
-  ]
+  ],
+  "additionalProperties": false
 }

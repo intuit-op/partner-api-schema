@@ -20,5 +20,6 @@
     "mortgageInterest",
     "depreciationExpense",
     "netRentalIncome"
-  ]
+  ],
+  "additionalProperties": false
 }

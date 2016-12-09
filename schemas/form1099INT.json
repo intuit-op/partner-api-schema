@@ -29,5 +29,6 @@
     "earlyWithdrawalPenalty",
     "interestOnBondsAndTreasury",
     "taxExemptInterest"
-  ]
+  ],
+  "additionalProperties": false
 }

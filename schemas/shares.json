@@ -35,5 +35,6 @@
     "endingLoss",
     "beginningCapital",
     "endingCapital"
-  ]
+  ],
+  "additionalProperties": false
 }

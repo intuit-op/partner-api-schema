@@ -3,10 +3,10 @@
 {
   "clientDataPoints": {
     "personalInfo": {
-      "firstName": "Marisol",
-      "middleName": "A",
+      "firstName": "Joe",
+      "middleName": "a",
       "lastName": "Testcase",
-      "nameSuffix": "Ms",
+      "nameSuffix": null,
       "streetAddress1": "220 Locust Ave",
       "streetAddress2": null,
       "city": "ANTHILL",

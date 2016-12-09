@@ -20,5 +20,6 @@
     "shortTerm",
     "longTerm",
     "summary"
-  ]
+  ],
+  "additionalProperties": false
 }

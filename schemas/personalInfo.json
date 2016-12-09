@@ -13,11 +13,17 @@
         "type": ["string", "null"],
         "description": "for 'Mr. John A King III' will submit 'III'"
       },
-      "streetAddress1": {"type": "string"},
+      "streetAddress1": {
+        "type": "string",
+        "minLength": 1
+      },
       "streetAddress2": {"type": ["string", "null"]},
       "city": {"type": ["string", "null"]},
       "state": {"type": ["string", "null"]},
-      "country": {"type": ["string", "null"]},
+      "country": {
+        "type": ["string", "null"],
+        "description": "a country code, required for non-US addresses only"
+      },
       "zip": {"type": ["string", "null"]}
     },
     "required": [

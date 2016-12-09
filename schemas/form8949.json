@@ -15,5 +15,6 @@
   "required": [
     "shortTermProceeds",
     "longTermProceeds"
-  ]
+  ],
+  "additionalProperties": false
 }

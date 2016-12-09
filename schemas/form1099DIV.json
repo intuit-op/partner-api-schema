@@ -19,5 +19,6 @@
     "payerName",
     "totalOrdinaryDividend",
     "totalCapitalGainDistribution"
-  ]
+  ],
+  "additionalProperties": false
 }

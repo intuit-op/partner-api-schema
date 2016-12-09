@@ -3,6 +3,7 @@
 {
   "clientDataPoints": {
     "personalInfo": {
+      "firstName": "a",
       "middleName": "A",
       "lastName": "Testcase",
       "nameSuffix": "Ms",
@@ -10,11 +11,11 @@
       "streetAddress2": null,
       "city": "ANTHILL",
       "state": "MO",
-      "country": "US",
+      "country": null,
       "zip": "00000"
     },
     "tax": {
-      "annualIncome": 1200088000,
+      "annualIncome": null,
       "paidPropertyTaxes": null,
       "filingStatus": "single",
       "contributionIRA": 0,

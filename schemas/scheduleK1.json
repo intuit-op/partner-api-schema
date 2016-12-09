@@ -19,5 +19,6 @@
   "required": [
     "sCorp",
     "partnership"
-  ]
+  ],
+  "additionalProperties": false
 }

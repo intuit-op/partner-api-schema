@@ -22,5 +22,6 @@
     "realEstateIncome",
     "interestIncome",
     "shares"
-  ]
+  ],
+  "additionalProperties": false
 }

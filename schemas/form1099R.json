@@ -22,5 +22,6 @@
     "payerName",
     "grossDistribution",
     "distributionType"
-  ]
+  ],
+  "additionalProperties": false
 }

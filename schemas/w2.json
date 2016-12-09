@@ -19,26 +19,26 @@
     },
     "contribution401k": {
       "type": ["integer", "null"],
-      "description": "in cents"
+      "description": "W-2 box 12 code D"
     },
     "contribution403B": {
       "type": ["integer", "null"],
-      "description": "in cents"
+      "description": "W-2 box 12 code E"
     },
     "sep": {
       "type": ["integer", "null"],
-      "description": "in cents"
+      "description": "W-2 box 12 code F"
     },
     "stateWithholding": {
-      "type": "array",
+      "type": ["array", "null"],
       "items": {
         "type": "object",
         "properties": {
           "state": {
-            "type": "string"
+            "type": ["string", "null"]
           },
           "tax": {
-            "type": "integer"
+            "type": ["integer", "null"]
           }
         },
         "required": ["state","tax"]
@@ -57,5 +57,6 @@
     "contribution403B",
     "sep",
     "stateWithholding"
-  ]
+  ],
+  "additionalProperties": false
 }
