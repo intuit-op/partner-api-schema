@@ -65,50 +65,17 @@
       "minItems": 0,
       "uniqueItems": false
     },
-
     "form1099R": {
       "type": ["array", "null"],
-      "items": {
-        "type": "object",
-        "properties": {
-          "ein": {
-            "type": "string"
-          },
-          "payerName": {
-            "type": "string"
-          },
-          "grossDistribution": {
-            "type": "integer"
-          },
-          "distributionType": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "ein",
-          "payerName",
-          "grossDistribution",
-          "distributionType"
-        ]
-      }
+      "items": {"$ref": "form1099R.json#"},
+      "minItems": 0,
+      "uniqueItems": false
     },
     "form1098E": {
       "type": ["array", "null"],
-      "items": {
-        "type": "object",
-        "properties": {
-          "recipientId": {
-            "type": "string"
-          },
-          "interestReceivedByLender": {
-            "type": "integer"
-          }
-        },
-        "required": [
-          "recipientId",
-          "interestReceivedByLender"
-        ]
-      }
+      "items": {"$ref": "form1098E.json#"},
+      "minItems": 0,
+      "uniqueItems": false
     }
   },
   "required": [

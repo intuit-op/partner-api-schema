@@ -1,0 +1,26 @@
+{
+  "id": "form1099R.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ein": {
+      "type": ["string", "null"]
+    },
+    "payerName": {
+      "type": ["string", "null"]
+    },
+    "grossDistribution": {
+      "type": ["integer", "null"],
+      "description": "form 1099-R line 1"
+    },
+    "distributionType": {
+      "type": ["string", "null"]
+    }
+  },
+  "required": [
+    "ein",
+    "payerName",
+    "grossDistribution",
+    "distributionType"
+  ]
+}

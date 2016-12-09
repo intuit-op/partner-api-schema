@@ -1,0 +1,18 @@
+{
+  "id": "form1098E.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "recipientId": {
+      "type": ["string", "null"]
+    },
+    "interestReceivedByLender": {
+      "type": ["integer", "null"],
+      "description": "form 1098-E line 1"
+    }
+  },
+  "required": [
+    "recipientId",
+    "interestReceivedByLender"
+  ]
+}
