@@ -1,0 +1,33 @@
+{
+  "id": "form1099INT.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "payerName": {
+      "type": ["string", "null"]
+    },
+    "interestIncome": {
+      "type": ["integer", "null"],
+      "description": "form 1099-INT line 1"
+    },
+    "earlyWithdrawalPenalty": {
+      "type": ["integer", "null"],
+      "description": "form 1099-INT line 2"
+    },
+    "interestOnBondsAndTreasury": {
+      "type": ["integer", "null"],
+      "description": "form 1099-INT line 3"
+    },
+    "taxExemptInterest": {
+      "type": ["integer", "null"],
+      "description": "form 1099-INT line 8"
+    }
+  },
+  "required": [
+    "payerName",
+    "interestIncome",
+    "earlyWithdrawalPenalty",
+    "interestOnBondsAndTreasury",
+    "taxExemptInterest"
+  ]
+}

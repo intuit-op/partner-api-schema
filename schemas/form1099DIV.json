@@ -1,0 +1,23 @@
+{
+  "id": "form1099DIV.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "payerName": {
+      "type": ["string", "null"]
+    },
+    "totalOrdinaryDividend": {
+      "type": ["integer", "null"],
+      "description": "form 1099-DIV line 1a"
+    },
+    "totalCapitalGainDistribution": {
+      "type": ["integer", "null"],
+      "description": "form 1099-DIV line 2a"
+    }
+  },
+  "required": [
+    "payerName",
+    "totalOrdinaryDividend",
+    "totalCapitalGainDistribution"
+  ]
+}

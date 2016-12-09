@@ -4,8 +4,8 @@
   "type": "object",
   "properties": {
     "annualIncome": {
-      "type": "integer",
-      "description": "adjusted gross income, can be negative, cents",
+      "type": ["integer", "null"],
+      "description": "total income, can be negative, form 1040 line 22",
       "minimum": -Infinity,
       "maximum": Infinity
     },
@@ -25,7 +25,7 @@
     },
     "contributionIRA": {
       "type": ["integer", "null"],
-      "description": "please specify source: which form and line?"
+      "description": "form 1040 line 32"
     },
     "w2": {
       "type": ["array", "null"],
@@ -53,8 +53,21 @@
       "minItems": 0,
       "uniqueItems": false
     },
+    "form1099INT": {
+      "type": ["array", "null"],
+      "items": {"$ref": "form1099INT.json#"},
+      "minItems": 0,
+      "uniqueItems": false
+    },
+    "form1099DIV": {
+      "type": ["array", "null"],
+      "items": {"$ref": "form1099DIV.json#"},
+      "minItems": 0,
+      "uniqueItems": false
+    },
+
     "form1099R": {
-      "type": "array",
+      "type": ["array", "null"],
       "items": {
         "type": "object",
         "properties": {
@@ -80,7 +93,7 @@
       }
     },
     "form1098E": {
-      "type": "array",
+      "type": ["array", "null"],
       "items": {
         "type": "object",
         "properties": {
@@ -94,58 +107,6 @@
         "required": [
           "recipientId",
           "interestReceivedByLender"
-        ]
-      }
-    },
-    "form1099INT": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "payerName": {
-            "type": "string"
-          },
-          "interestIncome": {
-            "type": "integer"
-          },
-          "earlyWithdrawalPenalty": {
-            "type": "integer"
-          },
-          "interestOnBondsAndTreasury": {
-            "type": "integer"
-          },
-          "taxExemptInterest": {
-            "type": "integer"
-          }
-        },
-        "required": [
-          "payerName",
-          "interestIncome",
-          "earlyWithdrawalPenalty",
-          "interestOnBondsAndTreasury",
-          "taxExemptInterest"
-        ]
-      }
-    },
-    "form1099DIV": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "payerName": {
-            "type": "string"
-          },
-          "totalOrdinaryDividend": {
-            "type": "integer"
-          },
-          "totalCapitalGainDistribution": {
-            "type": "integer"
-          }
-        },
-        "required": [
-          "payerName",
-          "totalOrdinaryDividend",
-          "totalCapitalGainDistribution"
         ]
       }
     }
