@@ -15,5 +15,5 @@
     "recipientId",
     "interestReceivedByLender"
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }

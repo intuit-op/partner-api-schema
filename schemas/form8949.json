@@ -16,5 +16,5 @@
     "shortTermProceeds",
     "longTermProceeds"
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }

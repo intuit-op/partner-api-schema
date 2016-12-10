@@ -14,5 +14,5 @@
     "clientDataPoints",
     "partnerClientId"
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }

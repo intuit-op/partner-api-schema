@@ -36,5 +36,5 @@
     "beginningCapital",
     "endingCapital"
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }

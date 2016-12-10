@@ -23,5 +23,5 @@
     "grossDistribution",
     "distributionType"
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }

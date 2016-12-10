@@ -5,11 +5,11 @@
   "properties": {
     "businessIncome": {
       "type": ["integer", "null"],
-      "description": "in cents"
+      "description": "schedule K-1 Form 1120S Part III line 1"
     },
     "realEstateIncome": {
       "type": ["integer", "null"],
-      "description": "in cents"
+      "description": "schedule K-1 Form 1120S Part III line 2"
     },
     "basisAdjustment": {
       "type": ["array", "null"],
@@ -17,7 +17,8 @@
         "type": ["integer", "null"]
       },
       "minItems": 0,
-      "uniqueItems": false
+      "uniqueItems": false,
+      "description": "schedule K-1 Form 1120S Part III line 16"
     }
   },
   "required": [
@@ -25,5 +26,5 @@
     "realEstateIncome",
     "basisAdjustment"
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }

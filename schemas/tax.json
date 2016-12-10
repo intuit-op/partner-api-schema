@@ -94,5 +94,5 @@
     "form1099INT",
     "form1099DIV"
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }

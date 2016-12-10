@@ -34,5 +34,5 @@
     "costsOfGoodsSold",
     "ownership"
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }

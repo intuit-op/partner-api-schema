@@ -10,5 +10,5 @@
     "personalInfo",
     "tax"
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }

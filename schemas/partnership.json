@@ -23,5 +23,5 @@
     "interestIncome",
     "shares"
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }
