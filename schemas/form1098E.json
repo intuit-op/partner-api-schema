@@ -4,7 +4,8 @@
   "type": "object",
   "properties": {
     "recipientId": {
-      "type": ["string", "null"]
+      "type": ["string", "null"],
+      "recipient's federal identification number"
     },
     "interestReceivedByLender": {
       "type": ["integer", "null"],
