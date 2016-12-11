@@ -5,16 +5,16 @@
   "properties": {
     "shortTermProceeds": {
       "type": ["integer", "null"],
-      "description": "in cents"
+      "description": "form 8949 Part I line 2d"
     },
     "longTermProceeds": {
       "type": ["integer", "null"],
-      "description": "in cents"
+      "description": "form 8949 Part II line 2d"
     }
   },
   "required": [
     "shortTermProceeds",
     "longTermProceeds"
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }

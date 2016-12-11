@@ -44,8 +44,7 @@
         "required": ["state","tax"]
       },
       "minItems": 0,
-      "uniqueItems": true,
-      "additionalItems": false
+      "uniqueItems": true
     }
   },
   "required": [
@@ -58,5 +57,5 @@
     "sep",
     "stateWithholding"
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }

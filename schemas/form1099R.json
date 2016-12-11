@@ -4,17 +4,19 @@
   "type": "object",
   "properties": {
     "ein": {
-      "type": ["string", "null"]
+      "type": ["string", "null"],
+      "description": "form 1099-R, payer's federal identification number"
     },
     "payerName": {
       "type": ["string", "null"]
     },
     "grossDistribution": {
       "type": ["integer", "null"],
-      "description": "form 1099-R line 1"
+      "description": "form 1099-R box 1"
     },
     "distributionType": {
-      "type": ["string", "null"]
+      "type": ["string", "null"],
+      "description": "form 1099-R box 7"
     }
   },
   "required": [
@@ -23,5 +25,5 @@
     "grossDistribution",
     "distributionType"
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }

@@ -20,5 +20,5 @@
     "totalOrdinaryDividend",
     "totalCapitalGainDistribution"
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }

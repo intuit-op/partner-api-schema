@@ -38,5 +38,5 @@
       "country",
       "zip"
     ],
-  "additionalProperties": false
+  "additionalProperties": true
 }

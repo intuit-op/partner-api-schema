@@ -5,15 +5,15 @@
   "properties": {
     "businessIncome": {
       "type": ["integer", "null"],
-      "description": "in cents"
+      "description": "schedule K-1 form 1065 Part III line 1"
     },
     "realEstateIncome": {
       "type": ["integer", "null"],
-      "description": "in cents"
+      "description": "schedule K-1 form 1065 Part III line 2"
     },
     "interestIncome": {
       "type": ["integer", "null"],
-      "description": "in cents"
+      "description": "schedule K-1 form 1065 Part III line 5"
     },
     "shares": {"$ref": "shares.json#"}
   },
@@ -23,5 +23,5 @@
     "interestIncome",
     "shares"
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }

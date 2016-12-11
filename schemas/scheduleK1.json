@@ -20,5 +20,5 @@
     "sCorp",
     "partnership"
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }

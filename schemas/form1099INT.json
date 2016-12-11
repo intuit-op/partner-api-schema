@@ -30,5 +30,5 @@
     "interestOnBondsAndTreasury",
     "taxExemptInterest"
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }
