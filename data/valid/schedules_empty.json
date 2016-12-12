@@ -1,0 +1,53 @@
+{
+  "clientDataPoints": {
+    "personalInfo": {
+      "firstName": "Bob",
+      "middleName": null,
+      "lastName": "Testcase",
+      "nameSuffix": null,
+      "streetAddress1": "220 Locust Ave",
+      "streetAddress2": null,
+      "city": "ANTHILL",
+      "state": "MO",
+      "country": null,
+      "zip": "00000"
+    },
+    "tax": {
+      "annualIncome": 1500000,
+      "paidPropertyTaxes": null,
+      "filingStatus": "single",
+      "contributionIRA": null,
+      "w2": [
+        {
+          "ein": "65-4324564",
+          "employerName": "Vegan Cow Farms",
+          "wages": 1500000,
+          "federalWithholding": 100000,
+          "contribution401k": null,
+          "contribution403B": null,
+          "sep": null,
+          "stateWithholding": [
+            {
+              "state": "MO", 
+              "tax": 100000
+            }
+          ]
+        }
+      ],
+      "scheduleC": [],
+      "scheduleD": null,
+      "scheduleE": [],
+      "scheduleK1": {
+        "sCorp": [],
+        "partnership": []
+      },
+      "form8949": [],
+      "form1099R": [],
+      "form1098E": [],
+      "form1099INT": [],
+      "form1099DIV": []
+    }
+  },
+  "partnerClientId": "21a71e6cf58794fef9b6c4bee69c64707"
+}
+

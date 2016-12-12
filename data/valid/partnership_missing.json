@@ -1,0 +1,141 @@
+{
+  "clientDataPoints": {
+    "personalInfo": {
+      "firstName": "Bob",
+      "middleName": "A",
+      "lastName": "Testcase",
+      "nameSuffix": "Ms",
+      "streetAddress1": "220 Locust Ave",
+      "streetAddress2": null,
+      "city": "ANTHILL",
+      "state": "MO",
+      "country": null,
+      "zip": "00000"
+    },
+    "tax": {
+      "annualIncome": 1200088000,
+      "paidPropertyTaxes": null,
+      "filingStatus": "single",
+      "contributionIRA": 0,
+      "w2": [
+        {
+          "ein": "65-4324564",
+          "employerName": "Vegan Cow Farms",
+          "wages": 5000000,
+          "federalWithholding": 1500000,
+          "contribution401k": 30300,
+          "contribution403B": 50500,
+          "sep": 0,
+          "stateWithholding": [
+            {
+              "state":"MO", 
+              "tax":50000
+            }
+          ]
+        }
+      ],
+      "scheduleC": [
+        {
+          "income": 310000,
+          "expenses": 860000,
+          "otherExpenses": 5000,
+          "costsOfGoodsSold": 1190000,
+          "ownership": "primary"
+        }
+      ],
+      "scheduleD": {
+        "shortTerm": 100500,
+        "longTerm": 291700,
+        "summary": 392200
+      },
+      "scheduleE": [
+        {
+          "mortgageInterest": 150000,
+          "depreciationExpense": 25000,
+          "netRentalIncome": 1720000
+        }
+      ],
+      "scheduleK1": {
+        "sCorp": [
+          {
+            "businessIncome": 500000,
+            "realEstateIncome": 0,
+            "basisAdjustment": [
+              
+            ]
+          },
+          {
+            "businessIncome": 0,
+            "realEstateIncome": 350000,
+            "basisAdjustment": [
+              
+            ]
+          },
+          {
+            "businessIncome": 100000,
+            "realEstateIncome": 0,
+            "basisAdjustment": [
+              
+            ]
+          }
+        ]
+      },
+      "form8949": [
+        {
+          "shortTermProceeds": null,
+          "longTermProceeds": null
+        }
+      ],
+      "form1099R": [
+        {
+          "ein": "57-6432356",
+          "payerName": "Chaze",
+          "grossDistribution": 2656509,
+          "distributionType": "1"
+        },
+        {
+          "ein": "null",
+          "payerName": "null",
+          "grossDistribution": 0,
+          "distributionType": "null"
+        }
+      ],
+      "form1098E": [
+        {
+          "recipientId": "bank of murrica",
+          "interestReceivedByLender": 75000
+        }
+      ],
+      "form1099INT": [
+        {
+          "payerName": "Banco Es Muy Ultra!",
+          "interestIncome": 245623,
+          "earlyWithdrawalPenalty": 3000,
+          "interestOnBondsAndTreasury": 2000,
+          "taxExemptInterest": 1000
+        },
+        {
+          "payerName": "Arroz con Pollo",
+          "interestIncome": 150000,
+          "earlyWithdrawalPenalty": 2000,
+          "interestOnBondsAndTreasury": 1000,
+          "taxExemptInterest": 500
+        }
+      ],
+      "form1099DIV": [
+        {
+          "payerName": "Chuck E Cheese",
+          "totalOrdinaryDividend": 500000,
+          "totalCapitalGainDistribution": 150000
+        },
+        {
+          "payerName": "Arroz con mesa",
+          "totalOrdinaryDividend": 300000,
+          "totalCapitalGainDistribution": 50000
+        }
+      ]
+    }
+  },
+  "partnerClientId": "21a71e6cf58794fef9b6c4bee69c64707"
+}
+

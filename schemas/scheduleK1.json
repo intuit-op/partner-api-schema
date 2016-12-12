@@ -1,7 +1,7 @@
 {
   "id": "scheduleK1.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
+  "type": ["object", "null"],
   "properties": {
     "sCorp": {
       "type": ["array", "null"],
@@ -17,8 +17,6 @@
     }
   },
   "required": [
-    "sCorp",
-    "partnership"
   ],
   "additionalProperties": true
 }

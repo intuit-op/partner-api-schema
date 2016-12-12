@@ -1,8 +1,8 @@
 {
   "id": "shares.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "schedule K-1 form 1065 Part II J"
-  "type": "object",
+  "description": "schedule K-1 form 1065 Part II J",
+  "type": ["object", "null"],
   "properties": {
     "beginningProfit": {
       "type": ["integer", "null"],

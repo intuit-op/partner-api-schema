@@ -1,7 +1,7 @@
 {
   "id": "tax.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
+  "type": ["object", "null"],
   "properties": {
     "annualIncome": {
       "type": ["integer", "null"],
@@ -82,17 +82,7 @@
     "annualIncome",
     "paidPropertyTaxes",
     "filingStatus",
-    "contributionIRA",
-    "w2",
-    "scheduleC",
-    "scheduleD",
-    "scheduleE",
-    "scheduleK1",
-    "form8949",
-    "form1099R",
-    "form1098E",
-    "form1099INT",
-    "form1099DIV"
+    "contributionIRA"
   ],
   "additionalProperties": true
 }
