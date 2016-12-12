@@ -24,7 +24,6 @@
     }
   },
   "required": [
-    "payerName",
     "interestIncome",
     "earlyWithdrawalPenalty",
     "interestOnBondsAndTreasury",

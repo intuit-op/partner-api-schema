@@ -41,21 +41,18 @@
             "type": ["integer", "null"]
           }
         },
-        "required": ["state","tax"]
+        "required": ["tax"]
       },
       "minItems": 0,
       "uniqueItems": true
     }
   },
   "required": [
-    "ein",
-    "employerName",
     "wages",
     "federalWithholding",
     "contribution401k",
     "contribution403B",
-    "sep",
-    "stateWithholding"
+    "sep"
   ],
   "additionalProperties": true
 }

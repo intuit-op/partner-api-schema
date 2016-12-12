@@ -27,16 +27,8 @@
       "zip": {"type": ["string", "null"]}
     },
     "required": [
-      "firstName",
-      "middleName",
       "lastName",
-      "nameSuffix",
-      "streetAddress1",
-      "streetAddress2",
-      "city",
-      "state",
-      "country",
-      "zip"
+      "streetAddress1"
     ],
   "additionalProperties": true
 }

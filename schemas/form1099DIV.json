@@ -16,7 +16,6 @@
     }
   },
   "required": [
-    "payerName",
     "totalOrdinaryDividend",
     "totalCapitalGainDistribution"
   ],

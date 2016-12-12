@@ -8,7 +8,7 @@
     "partnerClientId": {
       "type": "string",
       "minLength": 1,
-      "id to uniquely identify client"
+      "description": "id to uniquely identify client"
     }
   },
   "required": [
