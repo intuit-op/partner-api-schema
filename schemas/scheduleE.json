@@ -14,12 +14,21 @@
     "netRentalIncome": {
       "type": ["integer", "null"],
       "description": "schedule E line 26"
+    },
+    "ownership": {
+      "type": ["string", "null"],
+      "enum": [
+        "primary",
+        "joint"
+      ]
     }
+
   },
   "required": [
     "mortgageInterest",
     "depreciationExpense",
-    "netRentalIncome"
+    "netRentalIncome",
+    "ownership"
   ],
   "additionalProperties": true
 }

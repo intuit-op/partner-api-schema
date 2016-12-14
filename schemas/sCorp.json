@@ -19,11 +19,20 @@
       "minItems": 0,
       "uniqueItems": false,
       "description": "schedule K-1 Form 1120S Part III line 16"
+    },
+    "ownership": {
+      "type": ["string", "null"],
+      "enum": [
+        "primary",
+        "joint"
+      ]
     }
+
   },
   "required": [
     "businessIncome",
-    "realEstateIncome"
+    "realEstateIncome",
+    "ownership"
   ],
   "additionalProperties": true
 }

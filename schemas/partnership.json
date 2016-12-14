@@ -15,12 +15,20 @@
       "type": ["integer", "null"],
       "description": "schedule K-1 form 1065 Part III line 5"
     },
+    "ownership": {
+      "type": ["string", "null"],
+      "enum": [
+        "primary",
+        "joint"
+      ]
+    },
     "shares": {"$ref": "shares.json#"}
   },
   "required": [
     "businessIncome",
     "realEstateIncome",
-    "interestIncome"
+    "interestIncome",
+    "ownership"
   ],
   "additionalProperties": true
 }

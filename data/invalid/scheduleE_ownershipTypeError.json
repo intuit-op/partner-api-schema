@@ -1,7 +1,9 @@
+
+
 {
   "clientDataPoints": {
     "personalInfo": {
-      "firstName": "",
+      "firstName": "Bob",
       "middleName": "A",
       "lastName": "Testcase",
       "nameSuffix": "Ms",
@@ -53,10 +55,53 @@
           "mortgageInterest": 150000,
           "depreciationExpense": 25000,
           "netRentalIncome": 1720000,
-          "ownership": "primary"
+          "ownership": 1
         }
       ],
-      "scheduleK1": null,
+      "scheduleK1": {
+        "sCorp": [
+          {
+            "businessIncome": 500000,
+            "realEstateIncome": 0,
+            "ownership": "primary",
+            "basisAdjustment": [
+              
+            ]
+          },
+          {
+            "businessIncome": 0,
+            "realEstateIncome": 350000,
+            "ownership": "primary",
+            "basisAdjustment": [
+              
+            ]
+          },
+          {
+            "businessIncome": 100000,
+            "realEstateIncome": 0,
+            "ownership": "primary",
+            "basisAdjustment": [
+              
+            ]
+          }
+        ],
+        "partnership": [
+          {
+            "businessIncome": 777700,
+            "realEstateIncome": 0,
+            "interestIncome": 0,
+            "ownership": "primary",
+            "shares": {
+              "beginningProfit": 10000,
+              "endingProfit": 10000,
+              "beginningLoss": 10000,
+              "endingLoss": 10000,
+              "beginningCapital": 10000,
+              "endingCapital": 10000
+            }
+          }
+        ]
+      },
       "form8949": [
         {
           "shortTermProceeds": null,

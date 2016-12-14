@@ -64,7 +64,8 @@
         {
           "mortgageInterest": 150000,
           "depreciationExpense": 25000,
-          "netRentalIncome": 1720000
+          "netRentalIncome": 1720000,
+          "ownership": "primary"
         }
       ],
       "scheduleK1": {
@@ -72,6 +73,7 @@
           {
             "businessIncome": 500000,
             "realEstateIncome": 0,
+            "ownership": "primary",
             "basisAdjustment": [
               
             ]
@@ -79,6 +81,7 @@
           {
             "businessIncome": 0,
             "realEstateIncome": 350000,
+            "ownership": "primary",
             "basisAdjustment": [
               
             ]
@@ -86,6 +89,7 @@
           {
             "businessIncome": 100000,
             "realEstateIncome": 0,
+            "ownership": "primary",
             "basisAdjustment": [
               
             ]
@@ -96,6 +100,7 @@
             "businessIncome": 777700,
             "realEstateIncome": 0,
             "interestIncome": 0,
+            "ownership": "primary",
             "shares": {
               "beginningProfit": 10000,
               "endingProfit": 10000,
