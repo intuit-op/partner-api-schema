@@ -1,12 +1,7 @@
-schema validation
-====
 
+## This repo is no longer maintained
 
-## Quick Start
-
-For root schema, see [`./schemas/schema.json`](https://github.com/intuit-op/partner-api-schema/tree/master/schemas/schema.json)
-
+For references to IRS form set:
 ```shell
-$ pip install -r requirements.txt
-$ python3 validate.py
+grep -H -B 2 -r 'ref' * | less
 ```
